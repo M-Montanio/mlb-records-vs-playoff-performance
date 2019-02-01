@@ -10,7 +10,7 @@ import zipfile
 import requests
 import io
 
-def upload_data(game_log_list):
+def scrape_data(game_log_list):
 
     """
     Web scrapes for game logs and unzips and saves files.
@@ -28,7 +28,7 @@ def upload_data(game_log_list):
 
 def main():
     game_logs = ['2000_09', '2010_18', 'wc', 'dv', 'lc', 'ws']
-    upload_data(game_logs)
+    scrape_data(game_logs)
 
 if __name__ == "__main__":
     main()
